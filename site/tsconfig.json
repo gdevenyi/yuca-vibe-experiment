@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "noEmit": true,
+    "types": [
+      "@opendatacapture/runtime-v1/env",
+      "vite/client"
+    ],
+    "paths": {
+      "/runtime/v1/*": [
+        "../../runtime/v1/dist/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "scripts/**/*",
+    "vite.config.ts"
+  ]
+}

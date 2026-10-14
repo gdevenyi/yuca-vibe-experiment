@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../.odc/node_modules/@douglasneuroinformatics/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "lib": ["DOM", "ESNext"],
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "paths": {
+      "/runtime/v1/*": ["../.odc-types/runtime/v1/dist/*"]
+    },
+    "types": [],
+    "typeRoots": []
+  },
+  "files": ["../.odc-types/runtime/v1/env.d.ts"],
+  "include": ["forms/**/*", "series/**/*"]
+}

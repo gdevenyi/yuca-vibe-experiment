@@ -1,0 +1,9 @@
+# OpenDataCapture checkout and type copy made by scripts/build.sh
+/.odc/
+/.odc-types/
+/dist/
+node_modules/
+site/public/bundles/
+
+# Source PDFs stay local (copyright)
+*.pdf

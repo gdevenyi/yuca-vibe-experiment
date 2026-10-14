@@ -1,0 +1,33 @@
+{
+  "name": "@yuca/site",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "bundle": "tsx scripts/build-bundles.ts",
+    "build": "tsc -p tsconfig.json && tsx scripts/build-bundles.ts && vite build",
+    "dev": "tsx scripts/build-bundles.ts && vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@douglasneuroinformatics/libui": "catalog:",
+    "@opendatacapture/instrument-bundler": "workspace:*",
+    "@opendatacapture/instrument-interpreter": "workspace:*",
+    "@opendatacapture/instrument-utils": "workspace:*",
+    "@opendatacapture/react-core": "workspace:*",
+    "@opendatacapture/runtime-core": "workspace:*",
+    "@opendatacapture/runtime-v1": "workspace:*",
+    "@opendatacapture/schemas": "workspace:*",
+    "react": "workspace:react__19.x@*",
+    "react-dom": "workspace:react-dom__19.x@*",
+    "zod": "workspace:zod__3.x@*"
+  },
+  "devDependencies": {
+    "@opendatacapture/vite-plugin-runtime": "workspace:*",
+    "@tailwindcss/vite": "catalog:",
+    "@vitejs/plugin-react-swc": "^4.3.0",
+    "tailwindcss": "catalog:",
+    "tsx": "catalog:",
+    "vite": "catalog:"
+  }
+}
